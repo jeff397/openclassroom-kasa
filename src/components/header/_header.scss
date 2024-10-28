@@ -1,0 +1,21 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    &_logo-link img {
+        width : 210px;        
+    }
+    &_nav-links{
+        display: flex;
+        gap: 57px;
+        font-weight: 500;
+        font-size: 24px;
+    }
+    &_link{
+        text-decoration: none;
+        color: black;
+    }
+   
+}
+

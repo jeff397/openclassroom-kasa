@@ -7,3 +7,23 @@
 body {
   margin: 45px 100px 0 100px;
 }
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.Header_logo-link img {
+  width: 210px;
+}
+.Header_nav-links {
+  display: flex;
+  gap: 57px;
+  font-weight: 500;
+  font-size: 24px;
+}
+.Header_link {
+  text-decoration: none;
+  color: black;
+}
