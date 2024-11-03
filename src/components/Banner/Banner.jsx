@@ -1,12 +1,12 @@
 import React from 'react';
-import homeBanner from "../../assets/images/homeBanner.png"
 
-function banner() {
+
+function banner({imageSrc, bannerTitle}) {
     return (
     <div className='banner'>
-        <img src={homeBanner} alt="bannière" />
+        <img src={imageSrc} alt="bannière" />
         <div className="banner_overlay"></div>
-        <h1 className='banner_title'>Chez vous, partout et ailleurs</h1>
+        <h1 className='banner_title'>{bannerTitle}</h1>
     </div>
     );
 }
