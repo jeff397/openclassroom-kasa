@@ -5,7 +5,7 @@ import Card from '../Cards/card';
 
 const Gallery = () => {
   return (
-    <div className="home_gallery">
+    <section className="home_gallery">
       {logements.map((logement) => (
         <article key={logement.id}>
           <Link to={`/logement/${logement.id}`}>
@@ -13,7 +13,7 @@ const Gallery = () => {
           </Link>
         </article>
       ))}
-    </div>
+    </section>
   );
 };
 

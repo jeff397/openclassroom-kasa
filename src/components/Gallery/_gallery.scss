@@ -1,0 +1,8 @@
+.home_gallery {
+  padding: 56px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  background-color: #F6F6F6;
+  gap: 50px;
+  border-radius: 25px;
+}
