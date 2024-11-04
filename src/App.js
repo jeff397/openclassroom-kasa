@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/about" element={<About />} />
         
       </Routes>
+      <Footer />
     </Router>
   );
 }
