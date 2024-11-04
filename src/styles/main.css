@@ -38,6 +38,7 @@ body {
   position: relative;
   width: 100%;
   text-align: center;
+  margin-bottom: 43px;
 }
 .banner img {
   width: 100%;
@@ -58,40 +59,33 @@ body {
 }
 
 .card {
-  border-radius: 8px;
+  position: relative;
   overflow: hidden;
-  transition: transform 0.3s;
 }
 
-.card img {
+.card_img {
   width: 100%;
-  height: auto;
+  height: 340px;
   display: block;
+  border-radius: 10px;
 }
 
-.card:hover {
-  transform: scale(1.05);
+.card_title {
+  position: absolute;
+  bottom: 0px;
+  left: 16px;
+  color: white;
+  font-size: 1.125rem;
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 90%;
 }
 
 .home_gallery {
+  padding: 56px 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 15px;
-  padding: 20px;
-}
-
-.card {
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.card:hover {
-  transform: scale(1.05);
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #F6F6F6;
+  gap: 50px;
+  border-radius: 25px;
 }
