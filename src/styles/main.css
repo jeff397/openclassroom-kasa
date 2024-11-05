@@ -63,6 +63,35 @@ body {
   z-index: 2;
 }
 
+.collapse_dropdown_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FF6060;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+  padding: 10px 20px 8px 15px;
+  border-radius: 5px;
+}
+
+.dropdown_title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.collapse_dropdown_container {
+  background: #F6F6F6;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  white-space: normal;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
 .card {
   position: relative;
   overflow: hidden;
