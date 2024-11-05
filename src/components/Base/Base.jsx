@@ -1,4 +1,3 @@
-// src/components/Base/Base.jsx
 import React from 'react';
 
 const Base = ({ children }) => (
