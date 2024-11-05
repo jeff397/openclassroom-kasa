@@ -4,7 +4,7 @@ import aboutBanner from '../../assets/images/aboutBanner.png'
 
 function About() {
     return(
-        <div>
+        <div className="main_wrapper">
             <Header/>
             <Banner imageSrc={aboutBanner} />
 
