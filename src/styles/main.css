@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 body {
-  margin: 45px 100px;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   white-space: nowrap;
   font-family: "Montserrat", sans-serif;
+}
+
+.main_wrapper {
+  margin: 50px 100px;
 }
 
 .header {
@@ -45,6 +49,7 @@ body {
   height: 13.938rem;
   object-fit: cover;
   filter: brightness(0.5);
+  border-radius: 25px;
   display: block;
 }
 .banner .banner_title {
@@ -91,7 +96,26 @@ body {
 }
 
 .Footer {
-  width: 100%;
-  height: 209px;
-  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #fff;
+}
+
+.Footer_Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.Footer_Logo {
+  width: 122px;
+  padding: 66px 0 28px;
+}
+
+.Footer_Copyright {
+  font-size: 1.5rem;
+  margin-bottom: 29px;
 }
