@@ -1,4 +1,6 @@
-
+.collapse {
+    margin: 0 100px;
+}
 
 .collapse_dropdown_title {
     display: flex;
@@ -24,6 +26,9 @@
 }
 
 .dropdown-content {
+    margin: 0;
+    padding: 20px;
+    font-weight: 500;
     white-space: normal; 
     overflow-wrap: break-word; 
     max-width: 100%;
