@@ -6,8 +6,7 @@ import CollapseElements from "../../Listing/collapses.json";
 
 function About() {
     return(
-        <div className="main_wrapper">
-            <Header/>
+        <div className="main_wrapper">            
             <Banner imageSrc={aboutBanner} />
             <div className="collapse">
                 <div className="collapse_dropdown">
