@@ -1,22 +1,20 @@
 .card {
   position: relative;
   overflow: hidden;
-}
-
-.card_img {
-  width: 100%;
-  height: 340px;
-  display: block;
-  border-radius: 10px;
-}
-
-.card_title {
-  position: absolute;
-  bottom: 0px;
-  left: 16px;
-  color: white;
-  font-size: 1.125rem;
-  white-space: normal; 
-  overflow-wrap: break-word; 
-  max-width: 90%; 
+  &_img {
+    width: 100%;
+    height: 340px;
+    display: block;
+    border-radius: 10px;
+  }
+  &_title {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    color: white;
+    font-size: 1.125rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 90%;
+  }
 }

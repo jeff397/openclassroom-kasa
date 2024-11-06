@@ -1,27 +1,22 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
-}
-
-.header_logo img {
-    width:210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+  &_logo img {
+    width: 210px;
   }
-
-.header_links {
+  &_links {
     display: flex;
     font-weight: 500;
     font-size: 24px;
     gap: 57px;
-}
-
-.header_link {
+  }
+  &_link {
     text-decoration: none;
     color: black;
-}
-
-.header_link.active {
-    text-decoration: underline;   
-   
   }
+  &_link.active {
+    text-decoration: underline;
+  }
+}

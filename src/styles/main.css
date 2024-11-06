@@ -17,23 +17,19 @@ body {
   align-items: center;
   margin-bottom: 50px;
 }
-
 .header_logo img {
   width: 210px;
 }
-
 .header_links {
   display: flex;
   font-weight: 500;
   font-size: 24px;
   gap: 57px;
 }
-
 .header_link {
   text-decoration: none;
   color: black;
 }
-
 .header_link.active {
   text-decoration: underline;
 }
@@ -66,7 +62,6 @@ body {
 .collapse {
   margin: 0 100px;
 }
-
 .collapse_dropdown_title {
   display: flex;
   justify-content: space-between;
@@ -78,16 +73,15 @@ body {
   padding: 10px 20px 8px 15px;
   border-radius: 5px;
 }
-
-.dropdown_title {
-  margin: 0;
-  font-size: 1.5rem;
-}
-
 .collapse_dropdown_container {
   background: #F6F6F6;
   margin-bottom: 30px;
   border-radius: 5px;
+}
+
+.dropdown_title {
+  margin: 0;
+  font-size: 1.5rem;
 }
 
 .dropdown-content {
@@ -103,14 +97,12 @@ body {
   position: relative;
   overflow: hidden;
 }
-
 .card_img {
   width: 100%;
   height: 340px;
   display: block;
   border-radius: 10px;
 }
-
 .card_title {
   position: absolute;
   bottom: 0px;
@@ -138,19 +130,16 @@ body {
   background: #000000;
   color: #fff;
 }
-
 .Footer_Content {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 .Footer_Logo {
   width: 122px;
   padding: 66px 0 28px;
 }
-
 .Footer_Copyright {
   font-size: 1.5rem;
   margin-bottom: 29px;

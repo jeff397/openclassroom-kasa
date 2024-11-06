@@ -1,26 +1,21 @@
-
 .Footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000000;
+  color: #fff;
+  &_Content {
     display: flex;
-    justify-content: center; 
-    align-items: center;     
-    background: #000000;
-    color: #fff;           
-  }  
-  
-  .Footer_Content {
-    display: flex;
-    flex-direction: column;   
-    align-items: center;     
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
-  
-  .Footer_Logo {
-    width: 122px;  
-    padding: 66px 0 28px;  
+  &_Logo {
+    width: 122px;
+    padding: 66px 0 28px;
   }
-
-  .Footer_Copyright {
+  &_Copyright {
     font-size: 1.5rem;
     margin-bottom: 29px;
   }
-  
+}
