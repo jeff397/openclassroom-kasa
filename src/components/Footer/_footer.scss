@@ -1,9 +1,12 @@
+@use "../../styles/utils/variables";
+
 .Footer {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #000000;
-  color: #fff;
+  color: variables.$secondary-color;
+  margin-top: 50px;
   &_Content {
     display: flex;
     flex-direction: column;

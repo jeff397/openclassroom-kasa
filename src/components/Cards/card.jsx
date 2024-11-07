@@ -1,4 +1,5 @@
 import React from "react";
+import "./_card.scss";
 
 function Card({ image, title }) {
   return (

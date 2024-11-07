@@ -1,10 +1,12 @@
+@use "../../styles/utils/variables";
+
 .collapse {
   margin: 0 100px;
   &_dropdown_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: $primary-color;
+    background: variables.$primary-color;
     font-size: 1.5rem;
     font-weight: 700;
     color: white;
@@ -12,7 +14,7 @@
     border-radius: 5px;
   }
   &_dropdown_container {
-    background: $secondary-color;
+    background: variables.$secondary-color;
     margin-bottom: 30px;
     border-radius: 5px;
   }

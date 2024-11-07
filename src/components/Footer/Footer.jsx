@@ -1,5 +1,7 @@
 import React from "react";
 import Logo from "../../assets/images/footer.png";
+import "./_footer.scss";
+
 function Footer() {
   return (
     <section className="Footer">

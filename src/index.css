@@ -1,0 +1,10 @@
+body {
+  padding: 0;
+  box-sizing: border-box;
+  white-space: nowrap;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  margin: 0 100px;
+}

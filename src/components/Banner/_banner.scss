@@ -1,3 +1,5 @@
+@use "../../styles/utils/variables";
+
 .banner {
   position: relative;
   width: 100%;
@@ -18,7 +20,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -100%);
-    color: #ffffff;
+    color: variables.$secondary-color;
     font-size: 2em;
     font-weight: 700;
     z-index: 2;
