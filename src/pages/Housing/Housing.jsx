@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import slideLogement from "../../Listing/logements.json";
 import Slideshow from "../../components/Slideshow/Slideshow";
+import RatingStar from "../../components/StarRating/StarRating";
 
 function Housing() {
   const { id } = useParams();
@@ -21,6 +22,16 @@ function Housing() {
               <h2 className="slideshow-name">{housingData.host.name} </h2>
               <img src={housingData.host.picture} alt="host" />
             </div>
+          </div>
+          <div className="slideshow-tags">
+            {housingData.tags.map((tag, index) => (
+              <span key={index} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+          <div className="star-ratings">
+            <RatingStar rating={housingData.rating} />
           </div>
         </div>
       ) : (

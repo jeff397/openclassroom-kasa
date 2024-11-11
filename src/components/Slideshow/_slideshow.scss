@@ -61,6 +61,21 @@
   text-align: end;
   white-space: normal;
   overflow-wrap: break-word;
-  max-width: 67%;
+  max-width: 54%;
   color: variables.$primary-color;
+}
+
+.slideshow-tags {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  color: variables.$secondary-color;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.tag {
+  padding: 3px 40px;
+  background: variables.$primary-color;
+  border-radius: 10px;
 }

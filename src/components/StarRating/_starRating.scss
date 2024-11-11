@@ -1,0 +1,13 @@
+.star-rating {
+  display: flex;
+  gap: 5px; // Espacement entre les étoiles
+}
+
+.star img {
+  font-size: 20px;
+  color: #ccc; // Couleur des étoiles non remplies
+}
+
+.star.filled img {
+  color: #ffd700; // Couleur des étoiles remplies (jaune doré)
+}
