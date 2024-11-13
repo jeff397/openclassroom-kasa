@@ -1,6 +1,7 @@
 import React from "react";
 import fullStar from "../../assets/images/full_star.png";
 import emptyStar from "../../assets/images/empty_star.png";
+import "./_starRating.scss";
 
 function StarRating({ rating }) {
   const totalStar = 5;

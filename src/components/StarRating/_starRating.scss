@@ -1,13 +1,14 @@
+.slideshow-tags-ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .star-rating {
   display: flex;
-  gap: 5px; // Espacement entre les étoiles
+  gap: 10px;
 }
 
-.star img {
-  font-size: 20px;
-  color: #ccc; // Couleur des étoiles non remplies
-}
-
-.star.filled img {
-  color: #ffd700; // Couleur des étoiles remplies (jaune doré)
+.star-rating img {
+  width: 34px;
 }

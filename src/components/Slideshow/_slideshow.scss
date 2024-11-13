@@ -14,6 +14,7 @@
   position: absolute;
   background: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .arrow-left {
@@ -45,6 +46,7 @@
 
 .slideshow-host {
   display: flex;
+  justify-content: flex-end;
   margin-top: 30px;
   gap: 10px;
 }
@@ -67,6 +69,8 @@
 
 .slideshow-tags {
   display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   font-weight: 700;
   color: variables.$secondary-color;
@@ -75,7 +79,7 @@
 }
 
 .tag {
-  padding: 3px 40px;
+  padding: 5px 40px;
   background: variables.$primary-color;
   border-radius: 10px;
 }
