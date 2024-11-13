@@ -9,7 +9,7 @@ function Collapse({ title, content }) {
   };
 
   return (
-    <div className="collapse_dropdown_container">
+    <div className={`collapse_dropdown_container ${isOpen ? "opened" : ""}`}>
       <div className="collapse_dropdown_title">
         <h1 className="dropdown_title">{title}</h1>
         <span onClick={display}>
@@ -20,11 +20,19 @@ function Collapse({ title, content }) {
           )}
         </span>
       </div>
-      {isOpen && (
-        <div className="collapse_dropdown_content">
+      <div className="collapse_dropdown_content">
+        {Array.isArray(content) ? (
+          <ul className="dropdown-list">
+            {content.map((item, index) => (
+              <li key={index} className="dropdown-list-item">
+                {item}
+              </li>
+            ))}
+          </ul>
+        ) : (
           <p className="dropdown-content">{content}</p>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
