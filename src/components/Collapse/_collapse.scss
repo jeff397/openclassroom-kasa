@@ -20,12 +20,12 @@
   }
 }
 .collapse_dropdown_content {
-  max-height: 0; /* Hauteur de base (fermé) */
-  overflow: hidden; /* Cache le contenu lorsque fermé */
-  transition: max-height 0.3s ease; /* Transition fluide pour l'ouverture/fermeture */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.3s ease;
 }
 .collapse_dropdown_container.opened .collapse_dropdown_content {
-  max-height: 300px; /* Hauteur maximale souhaitée lorsqu'ouverte */
+  max-height: 300px;
 }
 
 .dropdown_title {
