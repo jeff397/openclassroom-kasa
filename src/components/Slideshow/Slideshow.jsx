@@ -21,23 +21,30 @@ function Slideshow({ slides }) {
     <div className="slideshow">
       {slides && slides.length > 0 ? (
         <>
-          <button
-            onClick={() => showImage("prev")}
-            className="arrow arrow-left"
-          >
-            <img src={arrowLeft} alt="arrow-left" />
-          </button>
+          {slides.length > 1 && (
+            <>
+              <button
+                onClick={() => showImage("prev")}
+                className="arrow arrow-left"
+              >
+                <img src={arrowLeft} alt="arrow-left" />
+              </button>
+              <button
+                onClick={() => showImage("next")}
+                className="arrow arrow-right"
+              >
+                <img src={arrowRight} alt="arrow-right" />
+              </button>
+            </>
+          )}
           <img
             className="slideshow-image"
             src={slides[currentIndex]}
             alt={`Slide ${currentIndex + 1}`}
           />
-          <button
-            onClick={() => showImage("next")}
-            className="arrow arrow-right"
-          >
-            <img src={arrowRight} alt="arrow-right" />
-          </button>
+          <p className="slideshow-number">
+            {currentIndex + 1}/{slides.length}
+          </p>
         </>
       ) : (
         <p>Pas d'images disponibles</p>

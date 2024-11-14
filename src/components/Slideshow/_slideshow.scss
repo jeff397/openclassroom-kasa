@@ -18,12 +18,21 @@
 }
 
 .arrow-left {
-  top: 150px;
+  top: 190px;
+  left: 10px;
 }
 
 .arrow-right {
-  top: 150px;
-  right: 0;
+  top: 190px;
+  right: 10px;
+}
+
+.arrow img {
+  width: 30px;
+  height: auto;
+  filter: drop-shadow(0px 0px 2px black);
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
 }
 
 .slideshow-container {
@@ -76,6 +85,13 @@
   color: variables.$secondary-color;
   gap: 10px;
   margin-top: 20px;
+}
+.slideshow-number {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: variables.$secondary-color;
+  font-size: 18px;
 }
 
 .tag {
