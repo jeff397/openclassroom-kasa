@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+import Error from "./pages/Error/Error";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           path="/Housing/:id"
           element={<Housing slideshow={<Slideshow />} />}
         />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </Router>
