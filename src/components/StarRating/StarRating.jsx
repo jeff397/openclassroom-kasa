@@ -8,11 +8,13 @@ function StarRating({ rating }) {
 
   return (
     <div className="star-rating">
-      {[...Array(totalStar)].map((_, index) => (
-        <span key={index} className="star">
-          <img src={index < rating ? fullStar : emptyStar} alt="star" />
-        </span>
-      ))}
+      {Array(totalStar)
+        .fill(1)
+        .map((_, index) => (
+          <span key={index} className="star">
+            <img src={index < rating ? fullStar : emptyStar} alt="star" />
+          </span>
+        ))}
     </div>
   );
 }
