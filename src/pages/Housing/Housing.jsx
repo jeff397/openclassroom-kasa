@@ -20,23 +20,25 @@ function Housing() {
         <div className="slideshow-container">
           <div className="slideshow-presentation">
             <h1 className="slideshow-title">{housingData.title}</h1>
-            <p className="slideshow-location">{housingData.location}</p>
+            <div className="slideshow-info">
+              <div className="slideshow-host">
+                <h2 className="slideshow-name">{housingData.host.name} </h2>
+                <img src={housingData.host.picture} alt="host" />
+              </div>
+            </div>
           </div>
-          <div className="slideshow-host">
-            <h2 className="slideshow-name">{housingData.host.name} </h2>
-            <img src={housingData.host.picture} alt="host" />
-          </div>
-        </div>
-        <div className="slideshow-tags-ratings">
-          <div className="slideshow-tags">
-            {housingData.tags.map((tag, index) => (
-              <span key={index} className="tag">
-                {tag}
-              </span>
-            ))}
-          </div>
-          <div className="star-ratings">
-            <RatingStar rating={housingData.rating} />
+          <p className="slideshow-location">{housingData.location}</p>
+          <div className="slideshow-tags-ratings">
+            <div className="slideshow-tags">
+              {housingData.tags.map((tag, index) => (
+                <span key={index} className="tag">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <div className="star-ratings">
+              <RatingStar rating={housingData.rating} />
+            </div>
           </div>
         </div>
         <div className="housing-collapses">

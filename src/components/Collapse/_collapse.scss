@@ -67,3 +67,33 @@
 .equipments-collapse {
   width: 50%;
 }
+
+@media screen and (max-width: 1024px) {
+  .housing-collapses {
+    display: inline;
+  }
+
+  .description-collapse {
+    width: 100%;
+  }
+
+  .equipments-collapse {
+    width: 100%;
+  }
+
+  .dropdown_title {
+    font-size: 13px;
+  }
+
+  .collapse_dropdown_title {
+    margin-top: 13px;
+  }
+
+  .dropdown-content {
+    font-size: small;
+  }
+
+  .dropdown-list {
+    font-size: small;
+  }
+}
