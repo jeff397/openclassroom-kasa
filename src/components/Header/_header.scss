@@ -20,3 +20,16 @@
     text-decoration: underline;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .header {
+    margin: 20px 20px 0px;
+    &_logo img {
+      width: 145px;
+    }
+    &_links {
+      font-size: 12px;
+      gap: 26px;
+    }
+  }
+}

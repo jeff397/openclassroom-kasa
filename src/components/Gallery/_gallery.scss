@@ -1,8 +1,16 @@
 .home_gallery {
   padding: 56px 50px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  background-color: #F6F6F6;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f6f6f6;
   gap: 50px;
   border-radius: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .home_gallery {
+    padding: 0;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

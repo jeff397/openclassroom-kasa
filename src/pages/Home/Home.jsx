@@ -1,14 +1,18 @@
 import Banner from "../../components/Banner/Banner";
 import homeBanner from "../../assets/images/homeBanner.png";
 
-import Gallery from "../../components/Gallery/Gallery";
+import Gallery from "../../components/Gallery/gallery";
 
 function Home() {
   return (
     <main>
       <Banner
         imageSrc={homeBanner}
-        bannerTitle="Chez vous, partout et ailleurs"
+        bannerTitle={
+          <span>
+            Chez vous, <br className="break" /> partout et ailleurs
+          </span>
+        }
       />
       <Gallery />
     </main>

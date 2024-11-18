@@ -7,7 +7,10 @@ function Footer() {
     <section className="Footer">
       <div className="Footer_Content">
         <img className="Footer_Logo" src={Logo} alt="Logo" />
-        <p className="Footer_Copyright">© 2020 Kasa. All right reserved</p>
+        <p className="Footer_Copyright">
+          © 2020 Kasa. All
+          <br className="break" /> right reserved
+        </p>
       </div>
     </section>
   );

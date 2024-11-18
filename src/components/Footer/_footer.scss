@@ -22,3 +22,18 @@
     margin-bottom: 29px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .Footer {
+    margin: 0;
+    &_Logo {
+      padding: 0;
+      padding-top: 66px;
+    }
+    &_Copyright {
+      margin: 5px 0 58px;
+      font-size: 12px;
+      line-height: 17px;
+    }
+  }
+}

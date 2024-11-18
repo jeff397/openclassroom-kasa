@@ -16,8 +16,7 @@
     border-radius: 25px;
     display: block;
   }
-
-  .banner_title {
+  &_title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,5 +25,25 @@
     font-size: 2em;
     font-weight: 700;
     z-index: 2;
+  }
+}
+
+.break {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner img {
+    height: 111px;
+  }
+  .banner_title {
+    font-size: 24px;
+    text-align: left;
+    top: 67px;
+    left: 145px;
+  }
+
+  .break {
+    display: inline;
   }
 }
