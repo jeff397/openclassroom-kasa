@@ -21,7 +21,20 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    margin: 50px 50px 0;
+    &_logo img {
+      width: 160px;
+    }
+    &_links {
+      font-size: 18px;
+      gap: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header {
     margin: 20px 20px 0px;
     &_logo img {

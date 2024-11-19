@@ -111,7 +111,30 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .arrow img {
+    width: 20px;
+  }
+
+  .slideshow-title {
+    font-size: 30px;
+  }
+
+  .slideshow-host img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .slideshow-name {
+    font-size: 16px;
+  }
+
+  .slideshow-location {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .slideshow-image {
     height: 255px;
     border-radius: 10px;
@@ -131,8 +154,8 @@
 
   .slideshow-host {
     position: absolute;
-    top: 127px;
-    left: 240px;
+    bottom: -7px;
+    right: -7px;
   }
 
   .slideshow-host img {

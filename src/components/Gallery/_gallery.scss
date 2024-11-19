@@ -7,10 +7,19 @@
   border-radius: 25px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .home_gallery {
+    grid-template-columns: repeat(2, 1fr);
+    background: white;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .home_gallery {
     padding: 0;
     grid-template-columns: 1fr;
+    background: white;
     gap: 20px;
   }
 }

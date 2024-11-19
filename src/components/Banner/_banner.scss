@@ -32,16 +32,24 @@
   display: none;
 }
 
-@media screen and (max-width: 1024px) {
-  .banner img {
-    height: 111px;
-    border-radius: 10px;
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .break {
+    display: none;
   }
-  .banner_title {
-    font-size: 24px;
-    text-align: left;
-    top: 67px;
-    left: 145px;
+}
+
+@media screen and (max-width: 767px) {
+  .banner {
+    & img {
+      height: 111px;
+      border-radius: 10px;
+    }
+    &_title {
+      font-size: 24px;
+      text-align: left;
+      top: 67px;
+      left: 145px;
+    }
   }
 
   .break {
