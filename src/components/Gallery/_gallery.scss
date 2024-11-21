@@ -11,6 +11,7 @@
   .home_gallery {
     grid-template-columns: repeat(2, 1fr);
     background: white;
+    padding: 0;
     gap: 30px;
   }
 }
