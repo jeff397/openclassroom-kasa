@@ -6,11 +6,11 @@ import "./_header.scss";
 function Header() {
   const location = useLocation();
   return (
-    <nav className="header">
+    <div className="header">
       <div className="header_logo">
         <img src={Logo} alt="Logo" />
       </div>
-      <div className="header_links">
+      <nav className="header_links">
         <Link
           to="/"
           className={`header_link ${location.pathname === "/" ? "active" : ""}`}
@@ -26,8 +26,8 @@ function Header() {
         >
           À propos
         </Link>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 
